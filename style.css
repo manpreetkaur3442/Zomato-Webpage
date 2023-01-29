@@ -13,7 +13,7 @@
 
 body{
   font-family: 'Merriweather', serif;
-  background-color: #f9fafc;
+  background-color: #ebf2ff;
 }
 
 .navbar{
@@ -24,7 +24,7 @@ body{
   background-color: #fff;
 }
 
-.navbar__item{
+.button__primary{
   background-image: linear-gradient(
     to right,
     #ff512f 0%,
@@ -38,12 +38,160 @@ body{
     font-weight: bold;
 }
 
-.navbar__item:hover{
+.button__primary:hover{
   border: 2px solid black;
   cursor: pointer;
 }
 
-@media (min-width: 768px){
+.container{
+  padding: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  border-width: thin;
+
+}
+
+.hero__image__container{
+  width: 100%;
+}
+
+.hero__image{
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0/ 100%);
+}
+
+.hero__text{
+  font-size: 30px;
+  margin: 20px 0;
+  color: #1d3557;
+  font-weight: 800px;
+}
+
+.food__card__image{
+  width: 100%;
+}
+
+.food__image{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.food__card{
+  background-color: #EAE0DA;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.food__card__description{
+  padding: 15px;
+}
+
+.explore__menu__text{
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: #1d3557 ;
+  font-weight: 800px;
+}
+
+.explore__menu__container{
+  position: relative;
+}
+
+.explore__menu__gradient__bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -3;
+  transform: skewY(-5deg);
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+    );
+}
+
+#email{
+  border-color: #EFA3C8;
+  background-color: #FFD4D4;
+  border-radius: 4px;
+  width: 200px;
+  border-width: thin;
+  height: 30px;
+}
+
+.update__title{
+  text-align: center;
+  color: #13005A;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+.update__entry{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.quote{
+  width: 350px;
+  margin-left: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.quote__image{
+  width: 100%;
+  border-radius: 6px;
+}
+
+.footer__text__container{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  align-items: center;
+}
+.footer__text__sides{
+  font-size: 13px;
+}
+.footer__text__main{
+  font-size: 20px;
+  font-weight: 10000px;
+}
+.footer__box{
+  position: absolute;
+  bottom: 0;
+  height: 120%;
+  width: 100%;
+  z-index: -3;
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+    );
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@media (min-width: 412px){
+  .quote{
+    margin-left: 20px;
+  }
+}
+@media (min-width:768px) {
   .navbar{
     justify-content: space-between;
     padding: 10px 30px;
@@ -51,18 +199,148 @@ body{
   .navbar__brand {
       width: 100px;
   }
-  .navbar__item{
+  .button__primary{
     padding: 10px;
     font-size: 20px;
+  }
+  .hero__image__container{
+    width: 1000px
+  }
+  .hero__text{
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .hero__container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .explore__menu__text{
+    margin-top: 20px;
+    font-size: 35px;
+  }
+  .explore__menu__lists{
+    display: flex;
+    gap:5px;
+  }
+  #pizza__card{
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+  #pizza__card__image{
+    width: 230px;
+  }
+  #thaali__card__image{
+    width: 220px;
+  }
+  .quote{
+    width: 450px;
+    margin-left: 170px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .update__title{
+    font-size: 30px;
+    margin: 10px;
+  }
+  .update__entry{
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+
+@media (min-width: 820px){
+  .navbar{
+    justify-content: space-between;
+    padding: 10px 30px;
+  }
+  .navbar__brand {
+      width: 100px;
+  }
+  .button__primary{
+    padding: 10px;
+    font-size: 20px;
+  }
+  .hero__image__container{
+    width: 1000px
+  }
+  .hero__text{
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .hero__container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .explore__menu__text{
+    margin-top: 20px;
+    font-size: 35px;
+  }
+  .explore__menu__lists{
+    display: flex;
+    gap:5px;
+  }
+  #pizza__card{
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+  #pizza__card__image{
+    width: 250px;
+  }
+  #thaali__card__image{
+    width: 250px;
+  }
+  .quote{
+    width: 450px;
+    margin-left: 170px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .update__title{
+    font-size: 30px;
+    margin: 10px;
+  }
+  .update__entry{
+    margin-left: 150px;
+    margin-right: 150px;
   }
 }
 
 @media (min-width: 1024px){
+  .container{
+    max-width: 70%;
+  }
+
   .navbar__brand{
     width: 80px;
   }
-  .navbar__item{
+  .button__primary{
     padding: 5px;
     font-size: 15px;
+  }
+  .hero__description{
+    font-size: 100%;
+  }
+  .hero__text{
+    font-size: 40px;
+  }
+  .footer__box{
+    left: auto;
+    width: 100%;
+    border-radius: 6px;
+  }
+  .quote{
+    width: 450px;
+    margin-left: 230px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .update__entry{
+    margin-left: 250px;
+    margin-right: 250px;
   }
 }
